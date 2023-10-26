@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>fucking sketchpad innit</h1>
+    <div class="mode">drawn't</div>
+  </div>
+  <div class="board"></div>
+  <div class="buttonContainer">
+    <button class="blackButton" onclick="colorChoice('black')">black</button>
+    <button class="redButton" onclick="colorChoice('red')">red</button>
+    <button class="eraserButton" onclick="colorChoice('white')">eraser</button>
+    <button class="resetButton" onclick="resetBackground()">reset</button>
+  </div>
+  <div class="submitContainer">
+    <input type="number" class="number" value="16" placeholder="Enter the size" onchange="changeSize(this.value)"/>
+    <button class="submitButton">submit</button>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
